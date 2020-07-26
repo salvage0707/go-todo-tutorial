@@ -11,6 +11,6 @@ func Init(router *gin.Engine) {
 	root := router.Group("/")
 	{
 		sampleC := sample.Controller{}
-		root.GET("/ping", sampleC.Ping)
+		root.GET("/", sampleC.Ping)
 	}
 }
